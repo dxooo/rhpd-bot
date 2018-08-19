@@ -350,9 +350,9 @@ async def divisions(ctx):
 	
     embed.set_author(name="Rockford Hills Police Info Bot", icon_url="http://www.beverlyhills.org/cbhfiles/storage/files/filebank_images/images/Police%20Department/BHPDLogo2.jpg")
 
-    embed.add_field(name="Field Services Division," value="Run by Commander Rocknik, containing the Patrol, Traffic, Emergency Services and Community Relations sections", inline=False)
-    embed.add_field(name="Investigative Services Division," value="Run by N/A, containing the Detective, Identification, Crime Analysis, and Intelligence sections", inline=False)
-    embed.add_field(name="Administrative Services Division," value="Run by N/A, containing the Records, Communications, Jail, Property & Evidence, Personnel Training, Special Projects, and Professional Standards sections", inline=False)
+    embed.add_field(name="Field Services Division", value="Run by Commander Rocknik, containing the Patrol, Traffic, Emergency Services and Community Relations sections", inline=False)
+    embed.add_field(name="Investigative Services Division", value="Run by N/A, containing the Detective, Identification, Crime Analysis, and Intelligence sections", inline=False)
+    embed.add_field(name="Administrative Services Division", value="Run by N/A, containing the Records, Communications, Jail, Property & Evidence, Personnel Training, Special Projects, and Professional Standards sections", inline=False)
 
     await ctx.send(embed=embed)
 
