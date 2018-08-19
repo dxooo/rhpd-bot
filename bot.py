@@ -26,7 +26,7 @@ async def on_member_join(member):
 	
     embed.set_author(name="Rockford Hills Police Info Bot", icon_url="http://www.beverlyhills.org/cbhfiles/storage/files/filebank_images/images/Police%20Department/BHPDLogo2.jpg")
 	
-    embed.add_field(name="Signing In", value="Make sure you head over to the #signing-in channel in order to be granted your tags.", inline=False)
+    embed.add_field(name="Signing In", value="Make sure you head over to the #headquarters-lobby channel in order to be granted your tags.", inline=False)
     embed.add_field(name="Questions?", value="If at any point you have any other questions please check our !faq or ask around, I am sure anyone would be willing to help!", inline=False)
     embed.add_field(name="Bot Help", value="Please contact brandon#9658 (Patrol Officer Johnson,) if you need any assistance with the bot and using !help, !faq and !cmds doesn't get you to where you need to be, thanks!", inline=False)
 	
@@ -335,12 +335,27 @@ async def cmds(ctx):
 
     embed.add_field(name="!searchpc", value="Allows a user to search through the list of Penal Codes", inline=False)
     embed.add_field(name="!searchvc", value="Allows a user to search through the list of Vehicle Codes", inline=False)	
+    embed.add_field(name="!divisions", value="Gives information about the various divisions of the Rockford Hills Police", inline=False)
     embed.add_field(name="!faq", value="Gives a list of info about Frequently Asked Questions", inline=False)
     embed.add_field(name="!status", value="Gives status of all HighSpeed-Gaming servers and their playercount", inline=False)
     embed.add_field(name="!info", value="Gives information about the bot", inline=False)
     embed.add_field(name="!cmds", value="Gives a message containing important commands for the bot", inline=False)
 
     await ctx.send(embed=embed)
+	
+# This command lists the base of commands for users to utilize
+@bot.command()
+async def divisions(ctx):
+    embed = discord.Embed(title="__Rockford Hills Police Information Bot__", description="_List of commands are:_", color=0x3D59AB)
+	
+    embed.set_author(name="Rockford Hills Police Info Bot", icon_url="http://www.beverlyhills.org/cbhfiles/storage/files/filebank_images/images/Police%20Department/BHPDLogo2.jpg")
+
+    embed.add_field(name="Field Services Division," value="Run by Commander Rocknik, containing the Patrol, Traffic, Emergency Services and Community Relations sections", inline=False)
+    embed.add_field(name="Investigative Services Division," value="Run by N/A, containing the Detective, Identification, Crime Analysis, and Intelligence sections", inline=False)
+    embed.add_field(name="Administrative Services Division," value="Run by N/A, containing the Records, Communications, Jail, Property & Evidence, Personnel Training, Special Projects, and Professional Standards sections", inline=False)
+
+    await ctx.send(embed=embed)
+
 
 	
 	
@@ -353,6 +368,9 @@ async def faq(ctx):
     embed.set_author(name="Rockford Hills Police Info Bot", icon_url="http://www.beverlyhills.org/cbhfiles/storage/files/filebank_images/images/Police%20Department/BHPDLogo2.jpg")
 	
     embed.add_field(name="I want to report someone", value="Contact your Shift Supervisor, if they can't help, go to one of the Sergeants or above", inline=False)
+    embed.add_field(name="What is my Call Sign?/What is my Patrol Zone?", value="Contact your Shift/Division Supervisor and utilize the #radio-frequencies channel.", inline=False)
+    embed.add_field(name="Who is my Supervisor?", value="Utilize the #radio-frequencies channel to learn the rank hierarchy and then search for the Supervisor with the corresponding call-signs", inline=False)
+    embed.add_field(name="How do I communicate with other officers?", value="Utilize the #radio-frequencies to understand the communication channel hierarchy and utilize it for inter-department communication.", inline=False)	
 	
     await ctx.send(embed=embed)
 	
