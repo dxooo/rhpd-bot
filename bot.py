@@ -201,7 +201,7 @@ async def searchpc(ctx, *, arg):
 12.09 Unlawful Possession of An Explosive Device	| 	Felony	| 	From 5 to 15 Minutes
 12.10 Manufacture of an Explosive Device	| 	Felony	| 	From 8 to 15 Minutes
 12.11 Unlawful Distribution of a Firearm	| 	Misdemeanor/Felony	| 	Up to 10 Minutes/From 8 to 15 Minutes
-12.12 Unlawful Possession of FIrearms with Intent to Sell	| 	Felony	| 	From 5 to 15 Minutes.
+12.12 Unlawful Possession of Firearms with Intent to Sell	| 	Felony	| 	From 5 to 15 Minutes.
 12.13 Unlawful Modification of a Firearm	| 	Misdemeanor/Felony	| 	Up to 5 Minutes/From 5 to 10 Minutes"""
     us_inpt = arg  
     err = "Nothing has been found based on your input"
