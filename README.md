@@ -1,1 +1,1 @@
-# rhpd-bot
+# info-bot
