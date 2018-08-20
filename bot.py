@@ -371,6 +371,7 @@ async def faq(ctx):
     embed.add_field(name="What is my Call Sign?/What is my Patrol Zone?", value="Contact your Shift/Division Supervisor and utilize the #radio-frequencies channel.", inline=False)
     embed.add_field(name="Who is my Supervisor?", value="Utilize the #radio-frequencies channel to learn the rank hierarchy and then search for the Supervisor with the corresponding call-signs", inline=False)
     embed.add_field(name="How do I communicate with other officers?", value="Utilize the #radio-frequencies to understand the communication channel hierarchy and utilize it for inter-department communication.", inline=False)	
+    embed.add_field(name="Who founded this department?", value="Mattias Lee Whitlock, the current Chief, founded this department in August of 2018", inline=False)
 	
     await ctx.send(embed=embed)
 	
