@@ -346,11 +346,11 @@ async def cmds(ctx):
 # This command lists the base of commands for users to utilize
 @bot.command()
 async def divisions(ctx):
-    embed = discord.Embed(title="__Rockford Hills Police Information Bot__", description="_List of commands are:_", color=0x3D59AB)
+    embed = discord.Embed(title="__Rockford Hills Police Information Bot__", description="_Here is some information about the divisions:_", color=0x3D59AB)
 	
     embed.set_author(name="Rockford Hills Police Info Bot", icon_url="http://www.beverlyhills.org/cbhfiles/storage/files/filebank_images/images/Police%20Department/BHPDLogo2.jpg")
 
-    embed.add_field(name="Field Services Division", value="Run by Commander Rocknik, containing the Patrol, Traffic, Emergency Services and Community Relations sections", inline=False)
+    embed.add_field(name="Field Services Division", value="Run by N/A, containing the Patrol, Traffic, Emergency Services and Community Relations sections", inline=False)
     embed.add_field(name="Investigative Services Division", value="Run by N/A, containing the Detective, Identification, Crime Analysis, and Intelligence sections", inline=False)
     embed.add_field(name="Administrative Services Division", value="Run by N/A, containing the Records, Communications, Jail, Property & Evidence, Personnel Training, Special Projects, and Professional Standards sections", inline=False)
 
